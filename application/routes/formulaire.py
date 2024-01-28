@@ -4,7 +4,7 @@ import pandas as pd
 from joblib import load
 
 # Chargez le modèle au démarrage de l'application
-model = load("best_model.joblib")
+model = load("application/best_model.joblib")
 
 @app.route("/book_recommendation_form", methods=['POST'])
 def book_recommendation_form():
